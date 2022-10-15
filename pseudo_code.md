@@ -1,8 +1,8 @@
 There are bunch of things this api should do
 #1,To gather as much as data about ethiopian airlines
 ----------------Data------------
-                  |------> first data i want to get is weekly flight schedule 
-                  |------>air craft type
+                  <p>first data i want to get is weekly flight schedule </p>
+                 <p> |------>air craft type</p>
                   |------>serial code 
                   |------>no of passangers if possible 
                   |------>name of captian

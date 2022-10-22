@@ -5,6 +5,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+import 
 from webdriver_manager.chrome import ChromeDriverManager
 from requests_html import HTMLSession
 
@@ -22,7 +23,12 @@ options.headless = True
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options)
 driver.set_window_size(1300, 700)
 start = time.time()
-os.chdir(os.path.join(os.getcwd(),'images'))
+try:
+    os.chdir(os.path.join(os.getcwd(),'images'))
+except:
+    import folder_mod
+    folder_mod.check_image()
+    os.chdir(os.path.join(os.getcwd(),'images'))
 i = 0
 for links in arrivals.absolute_links:
     driver.get(links)

@@ -11,9 +11,9 @@ Channel_id = -1001845353675
 
 bot = Client(
     "Opensky_sesstion",
-    api_id = 1356192,
-    api_hash = "2b0582246b18a908e1c908dc2deba611",
-    bot_token= "1964838851:AAHigCg48qzpxiUXKXi4W562UP-LeeBB6Pc"
+    api_id = ,
+    api_hash = "",
+    bot_token= "16Pc"
 )
 
 @bot.on_message(filters.command('start')&filters.private)
